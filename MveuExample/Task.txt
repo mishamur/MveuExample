@@ -1,0 +1,36 @@
+﻿Атрибут для класса
+Атрибут для метода
+
+в атрибутах никаких параметров не надо, 
+описать 8 классов, по 1-2 методов (cw(text))
+
+на половину классов навесить атрибуты на классы, на половину атрибуты на методы
+основной код через отражение,
+получить все классы сборки
+их инстанцировать(на которых висит атрибут класса), вызвать метод для которых есть атрибут для метода
+
+
+//код домашнего задания который надо будет переделывать
+/*
+//1 задание
+Calc calc = new(1, 2);
+Type calcType = calc.GetType();
+
+
+
+foreach(var info in calcType.GetMembers())
+{
+    Console.WriteLine(info.Name);
+};
+
+//исправить! метод через nameof и параметры конструктора тоже получить
+
+//2 задание
+object calc1 = Activator.CreateInstance(typeof(Calc), new object[] { 1, 2 });
+
+System.Reflection.MethodInfo methodInfo = typeof(Calc).GetMethod("Sub");
+
+dynamic result = methodInfo.Invoke(calc1, new object[] {});
+Console.WriteLine(result);
+*/
+
